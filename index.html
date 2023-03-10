@@ -4,46 +4,229 @@
   <meta charset="utf-8">
   <title>Francesco Campagna</title>
   <meta name="author" content="Francesco Campagna" />
-  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="style.css">
 </head>
 <body>
 
-<!-- count particles -->
+  <header class="header">
+    <div class="header__content">
+      <ul class="header__menu">
+        <li><a href="#home" class="underline">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <!-- <li><a href="#metodo">Metodo</a></li>
+        <li><a href="#servizi">Servizi</a></li> -->
+      </ul>
+      <div class="header__quick">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Call</title><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
+        <a class="button" style="white-space: nowrap;" href="">Contact Me</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+          </div>
+      </div>
+    </div>
+  </header>
 
-<div class="nome">
-   Francesco Campagna</br>
-   <font size=7em>Electronic Engineer</font>
+
+
+  
+  <div class="hero">
+    <div id="particles-js">
+    </div>
+    <div class="hero__content">
+      <h1 class="big-text">Francesco Campagna</h1>
+      <h2 class="med-text">Electronic Engineer</h2>
+      <a href="" class="button">Discover More</a>
+    </div>
+    <div class="hero__img">
+      <img src="cleo.jpg" alt="me" class="round">
+    </div>
+  </div>   
+
+  
+
+  <section class="container" id="about">
+    <h1 class="big-text big-margin">About Me</h1>
+    <div class="about">
+        <div class="about__left">
+            <h1 class="med-text">Information About me</h4>
+            <p class="normal-text">
+                I am an Engineer with a Master's degree in Electronics from the University of Udine
+                with a passion for innovation and problem-solving.
+                During my studies, i have gained expertise in mathematics, eletronics, computer science.
+                I am particulary passionate about the field of deep learning, which was the focus of my research project during my Master's thesis. 
+                I am motivated, committed, and enjoy working in teams.
+                I hope to utilize my technical skills and passion for innovation to contribute to an organization
+                that values talent and creativity.
+            </p>
+            <div class="btn-con">
+                <a href="#" class="main-btn">
+                    <span class="btn-text normal-text">Download CV</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div>
+        </div>
+        <div class="about__right">
+            <div class="about__right__item">
+                <p class="large-text">3+</p>
+                <p class="small-text">Projects <br> Completed</p>
+                <p class="super-small-text">(See the Portfolio)</p>
+            </div>
+            <div class="about__right__item">
+                <p class="large-text">110/110</p>
+                <p class="small-text">Master<br> Degree</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-stats">
+        <h1 class="med-text">My Skills</h1>
+        <div class="about-stats__grid">
+            <div class="progress-bar">
+                <p class="prog-title">Python</p>
+                <div class="progress-con">
+                    <p class="prog-text">95%</p>
+                    <div class="progress">
+                        <span class="python"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">VHDL</p>
+                <div class="progress-con">
+                    <p class="prog-text">85%</p>
+                    <div class="progress">
+                        <span class="vhdl"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">C</p>
+                <div class="progress-con">
+                    <p class="prog-text">75%</p>
+                    <div class="progress">
+                        <span class="c"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">Matlab</p>
+                <div class="progress-con">
+                    <p class="prog-text">75%</p>
+                    <div class="progress">
+                        <span class="matlab"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">sql</p>
+                <div class="progress-con">
+                    <p class="prog-text">60%</p>
+                    <div class="progress">
+                        <span class="sql"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <p class="prog-title">html5 / css</p>
+                <div class="progress-con">
+                    <p class="prog-text">60%</p>
+                    <div class="progress">
+                        <span class="html5"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="timeline">
+        <h1 class="med-text">My Timeline</h1>
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2012 - 2017</p>
+            <h5>high school<span> - ISIS Malignani</span></h5>
+            <p>
+                Liceo delle scienze applicate<br>
+                Diploma: 84/100
+            </p>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2017 - 2020</p>
+            <h5> University of Udine <span> - Bachelor's degree</span></h5>
+            <p>
+                Bachelor's degree in Electronic Engineering<br> 
+                Curriculum: computer science and networks <br>
+                Grade: 104/110 
+            </p>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2021 - 2022</p>
+            <h5>University of Udine<span> - Master's degree</span></h5>
+            <p>
+                Master's degree in Electronic Engineering<br> 
+                Curriculum: technolgies for artificial intelligence<br>
+                Grade: ???/110 
+            </p>
+        </div> -->
+        <!--
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2009 - 2013</p>
+            <h5>Business Degree<span> - Sussex University</span></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+            </p>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2013 - 2016</p>
+            <h5>Computer Science Degree<span> - Brookes University</span></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+            </p>
+        </div>
+        <div class="timeline-item">
+            <div class="tl-icon">
+                <i class="fas fa-briefcase"></i>
+            </div>
+            <p class="tl-duration">2017 - present</p>
+            <h5>3d Animation<span> - Brighton University</span></h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
+            </p>
+        </div>
+    </div>
+    -->
+  </section>
+
+  <section class="prova" id="portfolio">
+    <div class="container">
+    <h1 class="big-text big-margin">Portfolio</h1>
+
+    </div>
+  </section>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+<div class="prova">
 </div>
-
-<!-- particles.js container -->
-<div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="particles.js"></script>
-<script src="js/app.js"></script>
-
-<!-- stats.js 
-
-<script src="js/lib/stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>-->
 
 </body>
 </html>
