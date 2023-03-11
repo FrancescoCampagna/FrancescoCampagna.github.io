@@ -11,8 +11,8 @@ p{line-height: 28px; font-weight: 300;}
 .normal-text{font-size: 20px;}
 .small-text{font-size: 14px;}
 
-.big-margin{margin-top: 200px;}
-.med-margin{margin-top: 75px}
+.mt-200{margin-top: 200px;}
+.mt-75{margin-top: 75px}
 
 .intro-text{text-transform: uppercase;font-size: 20px;font-weight: bold;}
 
@@ -356,14 +356,39 @@ p{line-height: 28px; font-weight: 300;}
 }
 
 
-
-
-
-.prova{
+/* ! Portfolio */
+.blue_bg {
   position: relative;
   background-color: #002;
-  height: 1500px;
 }
 
-.prova h1,
-.prova p{color: #fff;}
+.blue_bg h1,
+.blue_bg p {color: #fff;}
+
+.portfolio {
+  width: 100%;
+  position: relative;
+  display: flex; flex-flow: row; flex-wrap: wrap; justify-content: space-between;
+
+}
+
+.portfolio__column{width: 30%; display: flex; flex-flow: column;}
+
+.cover_small{ 
+  border-radius: 20px;
+  background-size:cover;
+  text-align: center; min-height:300px; width:100%; 
+  display:flex; flex-direction:column; justify-content:center;  
+  margin: 20px 0; 
+}
+
+.cover_big{ 
+  border-radius: 20px;
+  background-size:cover;
+  text-align: center; min-height:640px; width:100%; 
+  display:flex; flex-direction:column; justify-content:center;  
+  margin: 20px 0;  
+}
+
+
+
