@@ -18,7 +18,6 @@
         <li><a href="#servizi">Servizi</a></li> -->
       </ul>
       <div class="header__quick">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>Call</title><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg>
         <a class="button" style="white-space: nowrap;" href="">Contact Me</a>
           <div class="icon-hamburger">
             <span></span>
@@ -31,18 +30,17 @@
 
 
   
-  <div class="hero">
+  <section class="hero" id="home">
     <div id="particles-js">
     </div>
     <div class="hero__content">
       <h1 class="big-text">Francesco Campagna</h1>
       <h2 class="med-text">Electronic Engineer</h2>
-      <a href="" class="button">Discover More</a>
     </div>
     <div class="hero__img">
       <img src="img/cleo.jpg" alt="me" class="round">
     </div>
-  </div>   
+</section>   
 
   
 
@@ -81,7 +79,7 @@
     </div>
 
     <div class="about-stats">
-        <h1 class="med-text">My Skills</h1>
+        <h1 class="med-text">My Coding Skills</h1>
         <div class="about-stats__grid">
             <div class="progress-bar">
                 <p class="prog-title">Python</p>
@@ -214,33 +212,43 @@
 
   <section class="blue_bg" id="portfolio">
     <div class="container">
-    <h1 class="big-text mt-200">Portfolio</h1>
-        <div class="portfolio">
+        <h1 class="big-text mt-200">Portfolio</h1>
+        <div class="portfolio mb-200">
             <div class="portfolio__column">
-                <div class="cover_small" style="background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('img/fpga.png') no-repeat center center; background-size: cover;">
-                    
-                    <h1 class="med-text">FPGA</h1>
+                <div class="port_item_small">
+                    <img src="img/fpga.png">
+                    <div class="overlay">
+                        <h1 class="med-text">FPGA</h1>
+                    </div>
                 </div>
-                <div class="cover_small" style="background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('img/VRP.jpg') no-repeat center center; background-size: cover;">
-                    
-                    <h1 class="med-text">VRP</h1>
+                <div class="port_item_small">
+                    <img src="img/VRP.jpg">
+                    <div class="overlay">
+                        <h1 class="med-text">VRP</h1>
+                    </div>
                 </div>
             </div>
             <div class="portfolio__column">
-                <div class="cover_big" style="background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('img/DesSS.png') no-repeat center center; background-size: cover;">
-                    
-                    <h1 class="med-text">IPS DesSS</h1>
+                <div class="port_item_big">
+                    <img src="img/DesSS.png">
+                    <div class="overlay">
+                        <h1 class="med-text">IPS DesSS</h1>
+                    </div>
                 </div>
             </div>
             <div class="portfolio__column">
-                <div class="cover_small" style="background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('img/BOF.jpg') no-repeat center center; background-size: cover;">
-                    
-                    <h1 class="med-text">BOF</h1>
+                <div class="port_item_small">
+                    <img src="img/BOF.jpg">
+                    <div class="overlay">
+                        <h1 class="med-text">BOF</h1>
+                    </div>
                 </div>
-                <div class="cover_small" style="background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8)),url('img/NN_GA.png') no-repeat center center; background-size: cover;">
-                    
-                    <h1 class="med-text">GA</h1>
-                    <p class="normal-text">Neural Network</p>
+                <div class="port_item_small">
+                    <img src="img/NN_GA.png">
+                    <div class="overlay">
+                        <h1 class="med-text">GA</h1>
+                        <p class="normal-text">Neural Network</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,6 +260,28 @@
     particlesJS.load('particles-js', 'particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
+
+    let item = document.querySelector('.icon-hamburger');
+    item.addEventListener("click", function() {
+      document.body.classList.toggle('menu-open');
+    });
+
+
+   let items = document.querySelectorAll('.header__menu a');
+   items.forEach((item) => {
+     item.addEventListener("click", function() {
+        //remove 
+        items.forEach((item) => {
+          item.classList.remove('underline');
+        });
+        //add
+        item.classList.add('underline');
+
+        // close menu mobile
+        document.body.classList.remove('menu-open');
+     });
+   });
+
   </script>
 
 
