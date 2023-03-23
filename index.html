@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="author" content="Francesco Campagna" />
   <link rel="stylesheet" media="screen" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -19,7 +20,7 @@
         <li><a href="#servizi">Servizi</a></li> -->
       </ul>
       <div class="header__quick">
-        <a class="button" style="white-space: nowrap;" href="">Contact Me</a>
+        <a class="button" style="white-space: nowrap;" href="#contact">Contact Me</a>
           <div class="icon-hamburger">
             <span></span>
             <span></span>
@@ -41,7 +42,7 @@
     <div class="hero__img">
       <img src="img/cleo.jpg" alt="me" class="round">
     </div>
-</section>   
+  </section>   
 
   
 
@@ -60,9 +61,9 @@
                 that values talent and creativity.
             </p>
             <div class="btn-con">
-                <a href="#" class="main-btn">
-                    <span class="btn-text normal-text">Download CV</span>
-                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                <a href="CV/Curriculum_non_aggiornato.pdf" download class="main-btn">
+                    <span class="normal-text">Download CV</span>
+                    <span><i class="fas fa-download"></i></span>
                 </a>
             </div>
         </div>
@@ -81,7 +82,7 @@
 
     <div class="about-stats">
         <h1 class="med-text">My Coding Skills</h1>
-        <div class="about-stats__grid">
+        <div class="about-stats__grid mb-200">
             <div class="progress-bar">
                 <p class="prog-title">Python</p>
                 <div class="progress-con">
@@ -138,12 +139,12 @@
             </div>
         </div>
     </div>
-    
-    <!-- <div class="timeline">
+    <!--
+    <div class="timeline">
         <h1 class="med-text">My Timeline</h1>
         <div class="timeline-item">
             <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-user-graduate"></i>
             </div>
             <p class="tl-duration">2012 - 2017</p>
             <h5>high school<span> - ISIS Malignani</span></h5>
@@ -154,29 +155,30 @@
         </div>
         <div class="timeline-item">
             <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-user-graduate"></i>
             </div>
             <p class="tl-duration">2017 - 2020</p>
             <h5> University of Udine <span> - Bachelor's degree</span></h5>
             <p>
                 Bachelor's degree in Electronic Engineering<br> 
-                Curriculum: computer science and networks <br>
-                Grade: 104/110 
+                Curriculum: robotics <br>
+                Grade: 106/110 
             </p>
         </div>
         <div class="timeline-item">
             <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
+                <i class="fas fa-user-graduate"></i>
             </div>
             <p class="tl-duration">2021 - 2022</p>
             <h5>University of Udine<span> - Master's degree</span></h5>
             <p>
                 Master's degree in Electronic Engineering<br> 
                 Curriculum: technolgies for artificial intelligence<br>
-                Grade: ???/110 
+                Grade: 110/110 
             </p>
-        </div> -->
-        <!--
+        </div>
+    </div>
+        
         <div class="timeline-item">
             <div class="tl-icon">
                 <i class="fas fa-briefcase"></i>
@@ -219,7 +221,7 @@
                 <div class="port_item_small">
                     <img src="img/fpga.png">
                     <div class="overlay">
-                        <h1 class="med-text">FPGA</h1>
+                        <h1 class="med-text">CPU Design</h1>
                     </div>
                 </div>
                 <div class="port_item_small">
@@ -247,14 +249,61 @@
                 <div class="port_item_small">
                     <img src="img/NN_GA.png">
                     <div class="overlay">
-                        <h1 class="med-text">GA</h1>
-                        <p class="normal-text">Neural Network</p>
+                        <h1 class="med-text">GA <br>Neural Network</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
   </section>
+
+  <section class="black_bg" id="contact">
+    <div class="container">
+        <h1 class="big-text mt-200">Contact Me</h1>
+        <div class="contact mb-200">
+            <h1 class="med-text">Where you can find me:</h1>
+            <div class="contact-item">
+                <div class="icon">
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span class="normal-text">Location:</span>
+                </div>
+                <p class="normal-text">
+                    Udine, Italy
+                </p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">
+                    <span><i class="fas fa-envelope"></i></span>
+                    <span class="normal-text">Email:</span>
+                </div>
+                <p>
+                    <span class="normal-text"> francescocan.98@gmail.com</span>
+                </p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">
+                    <span><i class="fas fa-phone"></i></span>
+                    <span class="normal-text">Mobile Number:</span>
+                </div>
+                <p>
+                    <span class="normal-text">+39 3343178362</span>
+                </p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">
+                    <span><i class="fas fa-globe-africa"></i></span>
+                    <span class="normal-text">Languages:</span>
+                </div>
+                <p>
+                    <span class="normal-text"> Italian, English</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+
 
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
   <script>
