@@ -7,6 +7,7 @@
   <meta name="author" content="Francesco Campagna" />
   <link rel="stylesheet" media="screen" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
@@ -16,8 +17,6 @@
         <li><a href="#home" class="underline">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <!-- <li><a href="#metodo">Metodo</a></li>
-        <li><a href="#servizi">Servizi</a></li> -->
       </ul>
       <div class="header__quick">
         <a class="button" style="white-space: nowrap;" href="#contact">Contact Me</a>
@@ -35,11 +34,11 @@
   <section class="hero" id="home">
     <div id="particles-js">
     </div>
-    <div class="hero__content">
+    <div class="hero__content reveal_right">
       <h1 class="big-text">Francesco Campagna</h1>
       <h2 class="med-text">Electronic Engineer</h2>
     </div>
-    <div class="hero__img">
+    <div class="hero__img reveal_left">
       <img src="img/cleo.jpg" alt="me" class="round">
     </div>
   </section>   
@@ -49,7 +48,7 @@
   <section class="container" id="about">
     <h1 class="big-text mt-200">About Me</h1>
     <div class="about">
-        <div class="about__left">
+        <div class="about__left reveal_right">
             <h1 class="med-text">Information About me</h4>
             <p class="normal-text">
                 I am an Engineer with a Master's degree in Electronics from the University of Udine
@@ -67,7 +66,7 @@
                 </a>
             </div>
         </div>
-        <div class="about__right">
+        <div class="about__right reveal_left">
             <a href="#portfolio">
                 <div class="about__right__item">
                     <p class="large-text">5</p>
@@ -82,9 +81,9 @@
         </div>
     </div>
 
-    <div class="about-stats">
+    <div class="about-stats reveal_right">
         <h1 class="med-text">My Coding Skills</h1>
-        <div class="about-stats__grid mb-200">
+        <div class="about-stats__grid">
             <div class="progress-bar">
                 <p class="prog-title">Python</p>
                 <div class="progress-con">
@@ -141,78 +140,47 @@
             </div>
         </div>
     </div>
-    <!--
-    <div class="timeline">
+
+    <div class="timeline reveal_right">
         <h1 class="med-text">My Timeline</h1>
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-user-graduate"></i>
+        <div class="timeline__grid mb-200">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <p class="timeline-duration">2020 - 2022</p>
+                <h1 class="normal-text">University of Udine<span> - Master's degree</span></h1>
+                <p>
+                    Master's degree in Electronic Engineering<br> 
+                    Curriculum: technolgies for artificial intelligence<br>
+                    Grade: 110/110 
+                </p>
             </div>
-            <p class="tl-duration">2012 - 2017</p>
-            <h5>high school<span> - ISIS Malignani</span></h5>
-            <p>
-                Liceo delle scienze applicate<br>
-                Diploma: 84/100
-            </p>
-        </div>
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-user-graduate"></i>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <p class="timeline-duration">2017 - 2020</p>
+                <h1 class="normal-text">University of Udine <span> - Bachelor's degree</span></h1>
+                <p>
+                    Bachelor's degree in Electronic Engineering<br> 
+                    Curriculum: mechatronics and robotics <br>
+                    Grade: 106/110 
+                </p>
             </div>
-            <p class="tl-duration">2017 - 2020</p>
-            <h5> University of Udine <span> - Bachelor's degree</span></h5>
-            <p>
-                Bachelor's degree in Electronic Engineering<br> 
-                Curriculum: robotics <br>
-                Grade: 106/110 
-            </p>
-        </div>
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-user-graduate"></i>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <p class="timeline-duration">2012 - 2017</p>
+                <h1 class="normal-text">High school<span> - ISIS Malignani</span></h1>
+                <p>
+                    Liceo delle scienze applicate<br>
+                    Diploma: 76/100
+                </p>
             </div>
-            <p class="tl-duration">2021 - 2022</p>
-            <h5>University of Udine<span> - Master's degree</span></h5>
-            <p>
-                Master's degree in Electronic Engineering<br> 
-                Curriculum: technolgies for artificial intelligence<br>
-                Grade: 110/110 
-            </p>
-        </div>
-    </div>
-        
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2009 - 2013</p>
-            <h5>Business Degree<span> - Sussex University</span></h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-            </p>
-        </div>
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2013 - 2016</p>
-            <h5>Computer Science Degree<span> - Brookes University</span></h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-            </p>
-        </div>
-        <div class="timeline-item">
-            <div class="tl-icon">
-                <i class="fas fa-briefcase"></i>
-            </div>
-            <p class="tl-duration">2017 - present</p>
-            <h5>3d Animation<span> - Brighton University</span></h5>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quasi vero fugit.
-            </p>
         </div>
     </div>
-    -->
   </section>
 
   <section class="blue_bg" id="portfolio">
@@ -220,7 +188,7 @@
         <h1 class="big-text mt-200">Portfolio</h1>
         <div class="portfolio mb-200">
             <div class="portfolio__column">
-                <div class="port_item_small">
+                <div class="port_item_small reveal_down">
                     <a href="https://github.com/FrancescoCampagna/MIPS-32bit" target="_blank" rel="noopener noreferrer">
                         <img src="img/fpga.png">
                         <div class="overlay">
@@ -228,14 +196,14 @@
                         </div>
                     </a>
                 </div>
-                <div class="port_item_small">
+                <div class="port_item_small reveal_up">
                     <img src="img/VRP.jpg">
                     <div class="overlay">
                         <h1 class="med-text">VRP</h1>
                     </div>
                 </div>
             </div>
-            <div class="portfolio__column">
+            <div class="portfolio__column reveal_up">
                 <div class="port_item_big">
                     <img src="img/DesSS.png">
                     <div class="overlay">
@@ -244,13 +212,13 @@
                 </div>
             </div>
             <div class="portfolio__column">
-                <div class="port_item_small">
+                <div class="port_item_small reveal_down">
                     <img src="img/BOF.jpg">
                     <div class="overlay">
                         <h1 class="med-text">BOF</h1>
                     </div>
                 </div>
-                <div class="port_item_small">
+                <div class="port_item_small reveal_up">
                     <img src="img/NN_GA.png">
                     <div class="overlay">
                         <h1 class="med-text">GA <br>Neural Network</h1>
@@ -264,7 +232,7 @@
   <section class="black_bg" id="contact">
     <div class="container">
         <h1 class="big-text mt-200">Contact Me</h1>
-        <div class="contact mb-200">
+        <div class="contact mb-200 reveal_right">
             <h1 class="med-text">Where you can find me:</h1>
             <div class="contact-item">
                 <div class="icon">
@@ -335,6 +303,12 @@
         document.body.classList.remove('menu-open');
      });
    });
+
+   ScrollReveal().reveal('.reveal_right',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'left' });
+   ScrollReveal().reveal('.reveal_left',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'right' });
+   ScrollReveal().reveal('.reveal_up',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'bottom' });
+   ScrollReveal().reveal('.reveal_down',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'top' });
+   ScrollReveal().reveal('.zoom',  { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65, mobile: false});
 
   </script>
 
