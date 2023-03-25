@@ -333,6 +333,7 @@ p{line-height: 28px; font-weight: 300; text-align: justify;}
   .about__right{width: 100%; margin-top: 50px;}
 
   .about-stats__grid{grid-template-columns: repeat(1, 1fr);}
+  .timeline__grid{grid-template-columns: repeat(1, 1fr);}
 
 }
 
@@ -442,7 +443,9 @@ p{line-height: 28px; font-weight: 300; text-align: justify;}
 .contact-item i {font-size: 1.3rem;}
 .contact-item .icon span + span {margin-left: 20px;}
 
-
+@media (max-width: 768px) {
+  .contact-item {width: 100%}
+}
 
 
 
