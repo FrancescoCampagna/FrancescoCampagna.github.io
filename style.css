@@ -176,7 +176,7 @@ p{line-height: 28px; font-weight: 300; text-align: justify;}
 /* ! About */
 
 .about {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between;position: relative;
   width: 100%;
   flex-flow: row;
   flex-wrap: wrap;
@@ -236,7 +236,17 @@ p{line-height: 28px; font-weight: 300; text-align: justify;}
 
 
 /*Code skills*/
-.about-stats {width: 100%; margin: 75px 0;}
+.about-stats {position: relative; width: 100%; margin: 75px 0;}
+.about-stats::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -25px;
+  width: 40%;
+  height: 2px;
+  background-color: var(--color-grey-2);
+  transform: translateX(-50%);
+}
 
 .about-stats__grid {display: grid;grid-template-columns: repeat(2, 1fr);grid-gap: 2rem;}
 
@@ -275,14 +285,14 @@ p{line-height: 28px; font-weight: 300; text-align: justify;}
 
 
 /*Timeline*/
-.timeline {margin: 75px 0; width: 100%;}
+.timeline {position: relative;margin: 75px 0; width: 100%;}
 .timeline::before {
   content: "";
   position: absolute;
   left: 50%;
-  top: -20px;
+  top: -25px;
   width: 40%;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-grey-2);
   transform: translateX(-50%);
 }

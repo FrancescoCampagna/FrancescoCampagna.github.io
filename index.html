@@ -304,8 +304,14 @@
      });
    });
 
+   if (window.innerWidth > 768) {
+    origin_left = "right"
+  } else {
+    origin_left = "left"
+  }
+
    ScrollReveal().reveal('.reveal_right',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'left' });
-   ScrollReveal().reveal('.reveal_left',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'right' });
+   ScrollReveal().reveal('.reveal_left',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: origin_left });
    ScrollReveal().reveal('.reveal_up',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'bottom' });
    ScrollReveal().reveal('.reveal_down',  { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600, origin: 'top' });
    ScrollReveal().reveal('.zoom',  { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65, mobile: false});
